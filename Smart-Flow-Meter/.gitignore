@@ -1,0 +1,34 @@
+# --- File Temporanei e Lock di SolidWorks ---
+~$*                # File "proprietario" (quelli che appaiono quando apri un file)
+~$*.*              # Estensione generica per file temporanei
+*.~vba             # File temporanei delle macro VBA
+*.swp              # File di swap (attenzione: vedi eccezione sotto)
+!00_COMMON_COMPONENTS/docs/templates/*.swp
+
+# --- Backup e Log (Inutili nel Versionamento) ---
+*.bak              # Backup generici
+*.sldbak           # Backup specifici di SolidWorks
+*.err              # Log di errore
+*.log              # File di log generici
+*.swxJcl           # Journal di SolidWorks
+*.jnl              # File Journal di sessione
+*.sldclr           # File di impostazioni colore temporanee
+
+# --- Configurazioni e Interfaccia ---
+*.sldreg           # Registrazioni del registro di sistema (UI/Impostazioni)
+ebp/               # Cartella di sistema/cache di SolidWorks PDM o simili
+
+# --- File di Sistema e Office ---
+Thumbs.db          # Anteprime di Windows
+desktop.ini        # Impostazioni cartella Windows
+~$*.xlsx           # File temporanei Excel
+~$*.docx           # File temporanei Word
+*.tmp              # File temporanei generici
+
+# --- Sicurezza e Output (Opzionale) ---
+key.txt            # Chiavi o password (MAI caricarle su Git)
+
+# --- Gestione Output (Valuta se includere) ---
+# Se vuoi che i PDF vengano generati ma NON caricati su Git (per non pesare sul repo)
+# scommenta la riga qui sotto:
+# 04_PDF/

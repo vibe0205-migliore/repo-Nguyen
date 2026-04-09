@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CPTemplate>
+  <AppVersion>30</AppVersion>
+  <CPSheet>
+    <GroupBox Label="DATI MACCHINA" PropName="Groupbox2" DefaultState="Expanded">
+      <Control Label="PROGETTO" PropName="Progetto" ApplyTo="Global" Type="TextBox" ReadOnly="False" DefaultValue="" Mode="Text" />
+      <Control Label="COMMESSA" PropName="Commessa" ApplyTo="Global" Type="ComboBox" ReadOnly="False" UserDefineable="False">
+        <Data Path="" SourceType="List">
+          <Item>Cliente</Item>
+          <Item>STD</Item>
+        </Data>
+      </Control>
+      <Control Label="CODICE" PropName="CODICE" ApplyTo="Global" Type="TextBox" ReadOnly="True" DefaultValue="SW-File Name" Mode="SWProperty" />
+      <Control Label="DESCRIZIONE" PropName="Descrizione" ApplyTo="Global" Type="TextBox" ReadOnly="False" DefaultValue="" Mode="Text" />
+      <Control Label="Materiale" PropName="Materiale" ApplyTo="Global" Type="TextBox" ReadOnly="False" DefaultValue="VEDI DISTINTA" Mode="Text" />
+      <Control Label="Peso" PropName="Peso" ApplyTo="Global" Type="TextBox" ReadOnly="False" DefaultValue="SW-Mass" Mode="SWProperty" />
+      <Control Label="AUTORE" PropName="Autore" ApplyTo="Global" Type="ComboBox" ReadOnly="False" UserDefineable="False">
+        <Data Path="" SourceType="List">
+          <Item>LL</Item>
+        </Data>
+      </Control>
+      <Control Label="DATA" PropName="Data" ApplyTo="Config" Type="TextBox" ReadOnly="False" DefaultValue="SW-Created Date" Mode="SWProperty" />
+    </GroupBox>
+  </CPSheet>
+</CPTemplate>
